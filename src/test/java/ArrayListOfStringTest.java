@@ -20,7 +20,7 @@ public class ArrayListOfStringTest {
 
     @Test
     public void testAdd() {
-        assertEquals(0, list.add(0));
+        assertEquals(Optional.of(0), list.add(0));
         assertEquals(22, Optional.ofNullable(list.get(1)));
         assertEquals(33, Optional.ofNullable(list.get(2)));
     }
